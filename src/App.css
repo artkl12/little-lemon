@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 50px;
+}
