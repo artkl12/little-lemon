@@ -1,0 +1,74 @@
+
+
+.hero__container {
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgb(0, 0, 0, 0.2);
+  
+}
+
+.hero__text {
+  width: 20rem;
+}
+
+.hero__img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.specials__text {
+  display: flex;
+  justify-content: center;
+}
+
+.specials__cards-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.Card {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.testimonials__container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.testimonials__h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about__container {
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about__text {
+  width: 20rem;
+  align-self: center;
+}
+
+.about__img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}

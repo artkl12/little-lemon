@@ -1,12 +1,37 @@
 import React from 'react'
+import "./Footer.css"
 
 function Footer() {
   return (
     <>
       <footer>
-        <p>
-          Footer section
-        </p>
+        <div>
+          <img src="Logo .svg" alt="logo" />
+        </div>
+        <div>
+          <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+            <li>twitter</li>
+            <li>tiktok</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+            <li>twitter</li>
+            <li>tiktok</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+            <li>twitter</li>
+            <li>tiktok</li>
+          </ul>
+        </div>
       </footer>
     </>
   )
