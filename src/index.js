@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './App.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from './Main';
-import About from './About';
 import NotFoundPage from './NotFoundPage';
 import Reservations from './Reservations';
+import DateTimePicker from './DateTime';
 
 const router = createBrowserRouter([
   {
@@ -22,14 +21,14 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <About />,
+    element: <DateTimePicker />,
     errorElement: <NotFoundPage />
   },  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <React.StrictMode>    
     <RouterProvider router={router} />
   </React.StrictMode>
 );

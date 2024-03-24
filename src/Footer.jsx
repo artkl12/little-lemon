@@ -4,9 +4,9 @@ import "./Footer.css"
 function Footer() {
   return (
     <>
-      <footer>
+      <footer className='footer__container'>
         <div>
-          <img src="Logo .svg" alt="logo" />
+          <img src="logo white.png" alt="logo" />
         </div>
         <div>
           <ul>

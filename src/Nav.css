@@ -1,8 +1,8 @@
 .nav__container {  
   display: flex;
   
-  justify-content: center;
-  
+  justify-content: space-around;
+  padding: 20px;
   align-items: center;
   gap: 1rem;
 }
@@ -10,4 +10,10 @@
 .nav-img {
   width: 50%;
   
+}
+
+nav a.active {
+  background-color: rgb(73, 94, 87);
+  color: white;
+  transition: ease-in-out 0.3s;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nav.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
@@ -9,12 +9,12 @@ function Nav() {
         <img className="nav__img nav" src="Logo .svg" alt="logo" />
         <ul className="nav__ul nav">
           <li>
-            <Link to="/">Home</Link>
-            <Link to="about">About</Link>
-            <Link to="menu">Menu</Link>
-            <Link to="reservations">Reservations</Link>
-            <Link to="order">Order Online</Link>
-            <Link to="login">Login</Link>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/menu">Menu</NavLink>
+            <NavLink to="/reservations">Reservations</NavLink>
+            <NavLink to="/order">Order Online</NavLink>
+            <NavLink to="/login">Login</NavLink>
           </li>
         </ul>
       </nav>

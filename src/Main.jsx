@@ -1,10 +1,7 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./Main.css";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Nav from "./Nav";
 import Footer from "./Footer";
 
@@ -15,13 +12,13 @@ function Main() {
       <section className="hero__container">
         <div className="hero__text">
           <h1>Little Lemon</h1>
-          <h3>Chicago</h3>
-          <p>
+          <h3 className="hero__text-p">Chicago</h3>
+          <p className="hero__text-p">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
             deserunt odit, doloribus nulla rem tempora libero distinctio illum
             et placeat?
           </p>
-          <Button variant="primary">Reserve Table</Button>
+          <NavLink to="reservations">Reserve table</NavLink>
         </div>
         <div>
           <img src="restauranfood.jpg" alt="rest-food" className="hero__img"/>
@@ -29,41 +26,50 @@ function Main() {
       </section>
       <section className="specials__container">
         <div className="specials__text">
-          <h2>Specials</h2>
-          <Button variant="primary">Order online</Button>
+          <h2>This weeks specials!</h2>
+          <Link to="/">Online Menu</Link>
         </div>
         <div className="specials__cards-container">
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="restauranfood.jpg" />
+            <Card.Img variant="top" src="greek salad.jpg" />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <div className="card__title">
+              <Card.Title>Greek salad</Card.Title>
+              <h6>$12.00</h6>
+              </div>
               <Card.Text>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Link to="/">Order</Link>
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="restauranfood.jpg" />
+            <Card.Img variant="top" src="bruchetta.jpg" />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+            <div className="card__title">
+              <Card.Title>Bruchetta</Card.Title>
+              <h6>$12.00</h6>
+              </div>
               <Card.Text>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Link to="/">Order</Link>
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="restauranfood.jpg" />
+            <Card.Img variant="top" src="lemon dessert.jpg" />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+            <div className="card__title">
+              <Card.Title>Lemon dessert</Card.Title>
+              <h6>$12.00</h6>
+              </div>
               <Card.Text>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Link to="/">Order</Link>
             </Card.Body>
           </Card>
         </div>
@@ -125,7 +131,7 @@ function Main() {
           
         </div>
         <div>
-          <img src="restauranfood.jpg" alt="rest-food" className="about__img"/>
+          <img src="grilled fish.jpg" alt="rest-food" className="about__img"/>
         </div>
       </section>
       <Footer />
