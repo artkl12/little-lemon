@@ -1,19 +1,19 @@
 * {
   margin: 0;
-  font-family: "Karla", sans-serif;  
+  font-family: "Karla", sans-serif;
   color: #495e57;
-  
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
-  padding: 10px 20px;  
+  padding: 5px 20px;
   border-radius: 15px;
   color: #495e57;
 }
 
 a:hover {
-  background-color: rgba(73, 94, 87, 0.1); 
+  background-color: rgba(73, 94, 87, 0.1);
 }
 
 li {

@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from './Main';
 import NotFoundPage from './NotFoundPage';
 import Reservations from './Reservations';
-import DateTimePicker from './DateTime';
 
 const router = createBrowserRouter([
   {
@@ -16,14 +15,9 @@ const router = createBrowserRouter([
   },  
   {
     path: "/reservations",
-    element: <Reservations />,
-    
+    element: <Reservations />,    
   },
-  {
-    path: "/about",
-    element: <DateTimePicker />,
-    errorElement: <NotFoundPage />
-  },  
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,7 +26,5 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-
 
 reportWebVitals();

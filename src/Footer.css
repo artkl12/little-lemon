@@ -1,16 +1,28 @@
 footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
+  gap: 1rem;
   background-color: #495e57;
   color: white;
+  padding-bottom: 1rem;
 }
 
-footer li {
-  color: white;  
+footer li,
+h6 {
+  color: #ffffff;
 }
 
-.footer__container {
+footer h6 {
+  padding-top: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.footer__soc {
   display: flex;
-  align-items: center;
+  gap: 2rem;
+}
+
+footer img {
+  width: 8rem;
 }

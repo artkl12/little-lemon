@@ -6,9 +6,9 @@ function Nav() {
   return (
     <>
       <nav className="nav__container">
-        <img className="nav__img nav" src="Logo .svg" alt="logo" />
-        <ul className="nav__ul nav">
-          <li>
+        <img className="nav__img" src="Logo .svg" alt="logo" />
+        <ul className="nav__ul">
+          <li className="nav__li">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about">About</NavLink>
             <NavLink to="/menu">Menu</NavLink>

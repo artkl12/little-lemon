@@ -10,29 +10,19 @@
 }
 
 .form__container {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  padding-bottom: 20px;
   background-color: #495e57;
-}
-
-form {
-  width: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 form textarea {
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 
 form label {
   color: white;
 }
+
 span {
   color: red;
 }
@@ -40,7 +30,6 @@ span {
 .form__inputs {
   display: flex;
   flex-direction: column;
-  width: 50%;
   gap: 5px;
   padding: 20px;
 }
@@ -58,20 +47,24 @@ input, select:focus {
   gap: 1rem;
 }
 
-form button {
+form button {  
   color: #495e57;
   background-color: yellow;
   font-weight: 600;
   border-radius: 15px;
   border: none;
-  padding: 8px 35px;
-  margin-left: 20px;
+  padding: 8px 35px;  
   align-self: center;
 }
 
 .form__button {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+
+form button:hover {
+  background-color: rgb(255, 255, 0, 0.8);
 }
 
 form input,
